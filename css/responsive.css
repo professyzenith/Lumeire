@@ -1,0 +1,26 @@
+/* ════════════════════════════════════════════════════════════
+   LUMIÈRE — Fine Dining
+   Responsive Breakpoints
+   Mobile / tablet overrides — loaded after style.css.
+   ════════════════════════════════════════════════════════════ */
+
+@media (max-width: 900px) {
+  #about,
+  #exp,
+  #reserve {
+    grid-template-columns: 1fr;
+  }
+
+  .mn-grid,
+  .t-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav .n-links {
+    display: none;
+  }
+
+  .h-inner {
+    padding-left: 5vw;
+  }
+}

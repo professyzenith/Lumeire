@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#080608">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière — Fine Dining</title>
+  <meta name="description" content="Lumière — an award-style cinematic fine dining experience. A premium one-page restaurant website built to showcase advanced front-end animation and design craft.">
+
+  <!-- Google Fonts: Cormorant Garamond (display serif) + Montserrat (UI sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+  <!-- GSAP — animation engine + ScrollTrigger plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="locked">
+
+<div id="c-dot"></div>
+<div id="c-ring"></div>
+
+<!-- ══════════ PRELOADER ══════════ -->
+<div id="pl">
+  <div class="plc tl"></div><div class="plc tr"></div>
+  <div class="plc bl"></div><div class="plc br"></div>
+  <div id="pl-center">
+    <div id="pl-brand">Lumière</div>
+    <div id="pl-track">
+      <div id="pl-fill"></div>
+      <div id="pl-tip"></div>
+    </div>
+    <div id="pl-meta">
+      <span id="pl-pct">0%</span>
+      <span id="pl-txt">Preparing Experience</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════ CINEMATIC INTRO ══════════ -->
+<div id="intro">
+  <canvas id="i-canvas"></canvas>
+  <div id="i-scan"></div>
+  <div id="i-grain"></div>
+  <div id="i-vign"></div>
+  <div id="i-flash"></div>
+  <div id="i-streak"></div>
+  <div id="gold-sweep"></div>
+  <canvas id="ltr-sparks"></canvas>
+  <div class="i-cor tl"></div>
+  <div class="i-cor tr"></div>
+  <div class="i-cor bl"></div>
+  <div class="i-cor br"></div>
+  <div id="i-content">
+    <div id="i-pre">Est. 2024 &nbsp;·&nbsp; Fine Dining</div>
+    <div id="i-letters">
+      <span class="i-l" data-l="L">L</span><span class="i-l" data-l="U">U</span><span class="i-l" data-l="M">M</span>
+      <span class="i-l" data-l="I">I</span><span class="i-l" data-l="È">È</span><span class="i-l" data-l="R">R</span>
+      <span class="i-l" data-l="E">E</span>
+    </div>
+    <div id="i-rule"></div>
+    <div id="i-sub">Where Cuisine Becomes Art</div>
+  </div>
+  <button id="i-skip">Skip Intro →</button>
+</div>
+
+<div id="sp"></div>
+<button id="replay">↺ Replay Intro</button>
+
+<!-- ══════════ SITE ══════════ -->
+<div id="site" style="opacity:0;">
+
+<nav>
+  <div class="n-logo">Lumière</div>
+  <ul class="n-links">
+    <li><a href="#about">Story</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#gal">Spaces</a></li>
+    <li><a href="#reserve">Reserve</a></li>
+  </ul>
+  <button class="n-cta mag">Reserve a Table</button>
+</nav>
+
+<section id="hero">
+  <canvas id="h-cv"></canvas>
+  <div id="h-spot"></div>
+  <div id="h-deco">
+    <div class="h-deco-line h" style="top:24%"></div>
+    <div class="h-deco-line h" style="top:50%"></div>
+    <div class="h-deco-line h" style="top:76%"></div>
+    <div class="h-deco-line v" style="left:33%"></div>
+    <div class="h-deco-line v" style="left:67%"></div>
+  </div>
+  <div class="h-ghost">Lumière</div>
+  <div class="e-lbl tl">Mumbai · India</div>
+  <div class="e-lbl tr">Open Tue–Sun</div>
+  <div class="e-lbl bl">Michelin ✦ Starred</div>
+  <div class="e-lbl br">Since 2024</div>
+  <div class="h-inner">
+    <span class="h-eye">Fine Dining Experience</span>
+    <h1 class="h-h1">A Taste<br>of <em>Pure<br>Luxury</em></h1>
+    <div class="h-rule"></div>
+    <p class="h-sub">Handcrafted &nbsp;·&nbsp; Seasonal &nbsp;·&nbsp; Unforgettable</p>
+    <div class="h-ctas">
+      <a href="#menu" class="h-btn mag"><span>Explore the Menu</span></a>
+      <a href="#reserve" class="h-link">Reserve a Table <span>→</span></a>
+    </div>
+  </div>
+  <div class="h-scroll">
+    <div class="h-scroll-line"></div>
+    <span class="h-scroll-txt">Scroll to Discover</span>
+  </div>
+</section>
+
+<div class="mq">
+  <div class="mq-t">
+    <span class="mq-i">Fine Dining</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Michelin Starred</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Seasonal Menu</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Private Events</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Wine Pairing</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Chef's Table</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Farm to Fork</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Fine Dining</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Michelin Starred</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Seasonal Menu</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Private Events</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Wine Pairing</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Chef's Table</span><span class="mq-i mq-d">✦</span>
+    <span class="mq-i">Farm to Fork</span><span class="mq-i mq-d">✦</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="ab-img">
+    <img class="ab-photo" src="assets/images/about-interior.jpg" alt="Lumière restaurant elegant dining interior" loading="lazy">
+    <div class="ab-bg">L</div>
+    <div class="ab-frame"></div>
+    <div class="ab-tag">Est. Mumbai · 2024</div>
+  </div>
+  <div>
+    <span class="s-ey">Our Story</span>
+    <div class="s-bar"></div>
+    <h2 class="ab-h2">Crafted with<br><em>passion &amp; soul</em></h2>
+    <p class="ab-p">Born from a dream of two chefs who believed food is the most intimate form of art. Every plate at Lumière is a canvas — painted with ingredients sourced from the finest farms, oceans, and gardens.</p>
+    <p class="ab-p">We do not serve food. We orchestrate experiences that linger long after the last sip of wine.</p>
+    <div class="pills">
+      <div class="pill">Organic</div><div class="pill">Chef Crafted</div>
+      <div class="pill">Seasonal</div><div class="pill">Local Farms</div>
+      <div class="pill">Zero Waste</div>
+    </div>
+  </div>
+</section>
+
+<section id="phil">
+  <div class="ph-glyph">L</div>
+  <span class="s-ey" style="text-align:center;">Our Philosophy</span>
+  <div class="ph-quote">"Great food is the foundation of genuine <em>happiness</em> — and at Lumière, every dish is a declaration of our devotion to that truth."</div>
+  <div class="ph-div"></div>
+  <p class="ph-sub">We believe dining is not merely nourishment — it is theatre, art, and memory crafted for you.</p>
+</section>
+
+<section id="menu">
+  <div class="mn-top">
+    <div><span class="s-ey">Signature Selection</span><h2 class="mn-h2">The Menu</h2></div>
+    <ul class="mn-tabs"><li class="on">All</li><li>Starters</li><li>Mains</li><li>Desserts</li></ul>
+  </div>
+  <div class="mn-grid">
+    <div class="mc"><div class="mc-sp"></div><span class="mc-n">01</span><div class="mc-name">Saffron Risotto</div><div class="mc-desc">Aged Carnaroli · Persian saffron · 24-month Parmigiano · white truffle · gold leaf</div><div class="mc-foot"><span class="mc-price">₹ 2,400</span><span class="mc-badge">Signature</span></div></div>
+    <div class="mc"><div class="mc-sp"></div><span class="mc-n">02</span><div class="mc-name">Lamb en Croûte</div><div class="mc-desc">New Zealand rack · herb crust · rosemary jus · glazed root vegetables · micro herbs</div><div class="mc-foot"><span class="mc-price">₹ 3,800</span><span class="mc-badge">Chef's Pick</span></div></div>
+    <div class="mc"><div class="mc-sp"></div><span class="mc-n">03</span><div class="mc-name">Miso Black Cod</div><div class="mc-desc">72-hour marinated · yuzu beurre blanc · micro shiso · sesame crumble · ponzu caviar</div><div class="mc-foot"><span class="mc-price">₹ 3,200</span><span class="mc-badge">Seasonal</span></div></div>
+    <div class="mc"><div class="mc-sp"></div><span class="mc-n">04</span><div class="mc-name">Dark Chocolate Sphere</div><div class="mc-desc">Valrhona 72% · salted caramel · edible gold · raspberry coulis · vanilla espuma</div><div class="mc-foot"><span class="mc-price">₹ 1,200</span><span class="mc-badge">Dessert</span></div></div>
+    <div class="mc"><div class="mc-sp"></div><span class="mc-n">05</span><div class="mc-name">Tasting Journey</div><div class="mc-desc">Seven-course chef's table · wine pairing available · personalised per guest</div><div class="mc-foot"><span class="mc-price">₹ 8,500</span><span class="mc-badge">Experience</span></div></div>
+    <div class="mc"><div class="mc-sp"></div><span class="mc-n">06</span><div class="mc-name">Vintage Reserve</div><div class="mc-desc">200+ label wine list · sommelier guided · cellar to table pairing experience</div><div class="mc-foot"><span class="mc-price">₹ 2,200+</span><span class="mc-badge">Wine</span></div></div>
+  </div>
+</section>
+
+<section id="gal">
+  <div class="gl-head"><span class="s-ey">The Atmosphere</span><h2 class="gl-h2">Step Into<br><em>Another World</em></h2></div>
+  <div class="gl-strip">
+    <div class="gl-card"><div class="gl-bg gba">The Hall<img class="gl-photo" src="assets/images/gallery-grand-hall.jpg" alt="The Grand Hall dining room" loading="lazy"></div><div class="gl-lbl">The Grand Hall</div><div class="gl-num">01</div></div>
+    <div class="gl-card"><div class="gl-bg gbb">Garden<img class="gl-photo" src="assets/images/gallery-garden-terrace.jpg" alt="Garden Terrace seating area" loading="lazy"></div><div class="gl-lbl">Garden Terrace</div><div class="gl-num">02</div></div>
+    <div class="gl-card"><div class="gl-bg gbc">Private<img class="gl-photo" src="assets/images/gallery-private-dining.jpg" alt="Private Dining room" loading="lazy"></div><div class="gl-lbl">Private Dining</div><div class="gl-num">03</div></div>
+    <div class="gl-card"><div class="gl-bg gbd">Cellar<img class="gl-photo" src="assets/images/gallery-wine-cellar.jpg" alt="Wine Cellar" loading="lazy"></div><div class="gl-lbl">Wine Cellar</div><div class="gl-num">04</div></div>
+  </div>
+</section>
+
+<section id="exp">
+  <div>
+    <span class="s-ey">Why Choose Us</span><div class="s-bar"></div>
+    <h2 class="ex-h2">An Experience<br><em>Unlike Any Other</em></h2>
+    <p class="ex-p">From the moment you step in, time slows. Every detail considered — because you deserve nothing less than extraordinary.</p>
+    <ul class="ex-list">
+      <li>Award-winning Culinary Team</li>
+      <li>Personalised Tasting Journey</li>
+      <li>200+ Curated Wine Labels</li>
+      <li>Private Event Hosting</li>
+      <li>Farm-to-Fork Philosophy</li>
+    </ul>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="st-n" data-count="12" data-suffix="+">0+</div><div class="st-l">Years of Excellence</div></div>
+    <div class="stat"><div class="st-n" data-count="3" data-suffix="">0</div><div class="st-l">Michelin Stars</div></div>
+    <div class="stat"><div class="st-n" data-count="48" data-suffix="k">0k</div><div class="st-l">Happy Guests</div></div>
+    <div class="stat"><div class="st-n" data-count="200" data-suffix="+">0+</div><div class="st-l">Wine Labels</div></div>
+  </div>
+</section>
+
+<section id="press">
+  <span class="s-ey" style="text-align:center;display:block;">As Featured In</span>
+  <h2 class="pr-h2">World-Class<br><em>Recognition</em></h2>
+  <div class="pr-logos">
+    <div class="pr-logo">Condé Nast Traveller</div>
+    <div class="pr-logo">The New York Times</div>
+    <div class="pr-logo">Vogue India</div>
+    <div class="pr-logo">Financial Times</div>
+    <div class="pr-logo">Forbes Life</div>
+  </div>
+  <div class="pr-div"></div>
+  <div class="t-grid">
+    <div class="t-card"><div class="t-stars">★★★★★</div><p class="t-txt">A transcendent experience. Lumière redefined what fine dining means to me.</p><div class="t-auth">Aryan Kapoor · Mumbai</div></div>
+    <div class="t-card"><div class="t-stars">★★★★★</div><p class="t-txt">The most beautiful restaurant in India. The saffron risotto alone is worth the flight.</p><div class="t-auth">Sarah Mitchell · London</div></div>
+    <div class="t-card"><div class="t-stars">★★★★★</div><p class="t-txt">Michelin-worthy in every sense. Ambiance, food, service — all absolute perfection.</p><div class="t-auth">Priya Mehta · Delhi</div></div>
+  </div>
+</section>
+
+<section id="reserve">
+  <div>
+    <span class="s-ey">Reserve Your Table</span>
+    <h2 class="rv-h2">An Exclusive<br><em>Evening Awaits</em></h2>
+    <div class="rv-avail">Only 4 tables available this week</div>
+    <ul class="rv-list">
+      <li><span class="rv-lbl">Address</span><div class="rv-val">12 Rue de Lumière, Bandra, Mumbai</div></li>
+      <li><span class="rv-lbl">Reservations</span><div class="rv-val">+91 98765 43210</div></li>
+      <li><span class="rv-lbl">Hours</span><div class="rv-val">Tue – Sun · 7pm – 11pm</div></li>
+      <li><span class="rv-lbl">Dress Code</span><div class="rv-val">Smart Elegant</div></li>
+    </ul>
+  </div>
+  <div class="form">
+    <div class="ff"><input type="text" id="fn" placeholder=" "><label for="fn">Your Name</label></div>
+    <div class="ff"><input type="email" id="fe" placeholder=" "><label for="fe">Email Address</label></div>
+    <div class="ff"><input type="tel" id="fp" placeholder=" "><label for="fp">Phone Number</label></div>
+    <div class="ff"><input type="date" id="fd" placeholder=" "><label for="fd">Date of Visit</label></div>
+    <div class="ff"><input type="number" id="fg" placeholder=" " min="1" max="20"><label for="fg">Number of Guests</label></div>
+    <button class="f-btn mag"><span>Secure My Reservation →</span></button>
+    <div class="f-note">Confirmation within 24hrs · Cancellation 48hrs prior</div>
+  </div>
+</section>
+
+<div id="footer">
+  <canvas id="f-cv"></canvas>
+  <div class="f-con">
+    <div class="f-logo">Lumière</div>
+    <div class="f-tag">Where Cuisine Becomes Art</div>
+    <div class="f-div"></div>
+    <ul class="f-links">
+      <li><a href="#about">Story</a></li><li><a href="#menu">Menu</a></li>
+      <li><a href="#gal">Spaces</a></li><li><a href="#press">Press</a></li>
+      <li><a href="#reserve">Reserve</a></li>
+    </ul>
+    <a href="#reserve" class="f-cta mag"><span>Reserve Your Table Tonight →</span></a>
+    <div class="f-copy">© 2024 Lumière Fine Dining · Mumbai, India · All Rights Reserved</div>
+  </div>
+</div>
+
+</div><!-- /site -->
+
+  <!-- Scripts — load order matters:
+       1. utils.js       → $, qs, qsa, sleep + GSAP plugin registration (zero deps)
+       2. cursor.js       → custom cursor system (depends on utils.js)
+       3. animations.js   → preloader / intro sequence / scroll animations
+       4. main.js          → boot sequence + remaining page interactions
+  -->
+  <script src="js/utils.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
