@@ -1,163 +1,293 @@
-# Lumière — Fine Dining
+<div align="center">
 
-A cinematic, fully animated one-page restaurant website built to portfolio standard. Features a custom two-stage intro (architectural preloader → particle-driven letter reveal), GSAP ScrollTrigger choreography across every section, a hand-built dual-layer cursor system, and a luxury violet-black / antique-gold visual identity.
+<!-- Animated SVG Title Banner -->
+<img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&size=52&duration=3000&pause=1000&color=C9A96E&center=true&vCenter=true&width=700&height=100&lines=LUMI%C3%88RE;Fine+Dining+Experience;Where+Cuisine+Becomes+Art" alt="Lumière" />
 
-This repository is structured the way a senior front-end developer would hand off a production build: HTML, CSS, and JavaScript fully separated, JavaScript split into logical modules, and an `assets/` directory ready for real photography, icons, and self-hosted fonts.
+<br/>
 
----
+<!-- Live badge -->
+<a href="https://professyzenith.github.io/Lumiere/">
+  <img src="https://img.shields.io/badge/LIVE%20DEMO-%E2%86%92-C9A96E?style=for-the-badge&labelColor=08070A&color=C9A96E" alt="Live Demo"/>
+</a>
+&nbsp;
+<img src="https://img.shields.io/badge/HTML5-08070A?style=for-the-badge&logo=html5&logoColor=C9A96E" alt="HTML5"/>
+&nbsp;
+<img src="https://img.shields.io/badge/CSS3-08070A?style=for-the-badge&logo=css3&logoColor=C9A96E" alt="CSS3"/>
+&nbsp;
+<img src="https://img.shields.io/badge/JavaScript-08070A?style=for-the-badge&logo=javascript&logoColor=C9A96E" alt="JavaScript"/>
+&nbsp;
+<img src="https://img.shields.io/badge/GSAP-08070A?style=for-the-badge&logo=greensock&logoColor=C9A96E" alt="GSAP"/>
 
-## Live Preview
+<br/><br/>
 
-Deploy this folder to GitHub Pages or Vercel (see **Deployment** below) and your site will be live at a URL like:
+<!-- Divider -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
 
-```
-https://your-username.github.io/your-repo-name/
-```
-or
-```
-https://your-project.vercel.app
-```
+</div>
 
----
+<br/>
 
-## Project Structure
+<div align="center">
+
+> *"Luxury is not served. It is experienced."*
+
+</div>
+
+<br/>
+
+<!-- Preview Image slot — replace this URL with a real screenshot or GIF of your site -->
+<div align="center">
+<img src="https://professyzenith.github.io/Lumiere/assets/images/preview.gif" alt="Lumière Preview" width="100%" style="border-radius:4px"/>
+</div>
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
+
+<br/>
+
+## ✦ &nbsp;What Is This
+
+**Lumière** is a cinematic, fully animated one-page restaurant website — built as a **portfolio centrepiece** to demonstrate world-class front-end animation, interaction design, and technical craft to prospective clients.
+
+This is not a template. Every transition, every timing curve, every interaction was deliberately choreographed — from the 6-second cinematic intro sequence down to the elastic snap-back on the CTA buttons. The goal: make anyone who opens it immediately think **"How was this built?"**
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
+
+<br/>
+
+## ✦ &nbsp;The Intro Sequence
+
+<table>
+<tr>
+<td width="50%">
+
+**Stage 1 — Preloader** `~2s`
+- Dark panther background
+- Gold progress line fills 0 → 100%
+- Shimmering light tip rides the edge
+- Corner brackets snap in
+- 12-blade curtain wipe exit
+
+</td>
+<td width="50%">
+
+**Stage 2 — Main Intro** `~4.2s`
+- 280 ember particles + wave layers
+- Shooting stars arc across the void
+- Gold sweep beam reveals each letter
+- Particle sparks burst per character
+- 18-panel film-rip into homepage
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
+
+<br/>
+
+## ✦ &nbsp;Features
+
+<table>
+<tr><td>🎬</td><td><strong>Cinematic Two-Stage Intro</strong> — Custom preloader + LUMIÈRE letter reveal via a sweeping gold beam with particle sparks and film-rip exit</td></tr>
+<tr><td>✦</td><td><strong>GSAP ScrollTrigger</strong> — Staggered entrances, clip-path text reveals, parallax scrub, and count-up statistics across every section</td></tr>
+<tr><td>🖱️</td><td><strong>Custom Cursor</strong> — Dual-layer dot + trailing ring with magnetic elastic snap-back on all primary buttons</td></tr>
+<tr><td>🌟</td><td><strong>Canvas Particle Systems</strong> — Two fully hand-coded Canvas 2D fields (hero + footer), zero external particle libraries</td></tr>
+<tr><td>🖼️</td><td><strong>Mouse-Reactive Hero</strong> — Radial spotlight tracks cursor, ghost-text parallaxes with mouse movement</td></tr>
+<tr><td>💡</td><td><strong>Menu Card Spotlight</strong> — Radial glow follows the cursor independently per card</td></tr>
+<tr><td>📱</td><td><strong>Fully Responsive</strong> — Mobile breakpoints in a dedicated <code>responsive.css</code></td></tr>
+<tr><td>🖼️</td><td><strong>Photo-Mode Ready</strong> — Real photography slots wired in, toggled with a single CSS class</td></tr>
+<tr><td>⚡</td><td><strong>Zero Build Step</strong> — Pure HTML/CSS/JS, no npm, no bundler, open directly or deploy instantly</td></tr>
+</table>
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
+
+<br/>
+
+## ✦ &nbsp;Project Structure
 
 ```
 lumiere/
-├── index.html              Main page markup
+├── index.html                ← Semantic HTML markup
 ├── css/
-│   ├── style.css            Core stylesheet — layout, colour, typography, animation keyframes
-│   └── responsive.css        Mobile / tablet breakpoint overrides
+│   ├── style.css              ← Core styles — layout, colour, typography, keyframes
+│   └── responsive.css          ← Mobile/tablet breakpoints (single clean block)
 ├── js/
-│   ├── utils.js              Global helpers ($, qs, qsa, sleep) + GSAP plugin setup
-│   ├── cursor.js              Custom dual-layer cursor system
-│   ├── animations.js          Preloader, intro sequence, and all ScrollTrigger animations
-│   └── main.js                 Hero/footer canvases, magnetic buttons, boot sequence
+│   ├── utils.js                ← Global helpers + GSAP plugin registration (loads first)
+│   ├── cursor.js                ← Custom cursor — self-contained, zero deps
+│   ├── animations.js             ← Preloader · intro sequence · all ScrollTrigger logic
+│   └── main.js                    ← Canvases · magnetic buttons · boot sequence
 ├── assets/
-│   ├── images/                Real photography slots (see "Enabling Real Photography" below)
-│   ├── icons/                 Favicon / app icon slot
-│   └── fonts/                 Self-hosted font slot (optional — fonts load from Google by default)
+│   ├── images/                 ← Drop real photos here (see Enabling Real Photography)
+│   ├── icons/                  ← Favicon slot
+│   └── fonts/                  ← Self-hosted font slot (optional)
 └── README.md
 ```
 
-### Why the JavaScript is split this way
+> **Script load order matters** — `utils.js` → `cursor.js` → `animations.js` → `main.js`
+> Each module depends on the previous. No bundler needed; the HTML loads them in the correct order.
 
-Script load order matters for this project, since nothing is bundled or wrapped in ES modules:
+<br/>
 
-1. **`utils.js`** — zero dependencies. Defines the `$` / `qs` / `qsa` / `sleep` shorthand helpers and registers the GSAP `ScrollTrigger` plugin. Must load first.
-2. **`cursor.js`** — depends only on `utils.js`. Fully self-contained custom cursor logic.
-3. **`animations.js`** — the largest module. Contains the intro canvas (ember particles, waves, shooting stars), the `runPreloader()` and `runIntro()` async sequences, and `initScrollAnims()` (every GSAP ScrollTrigger reveal on the page).
-4. **`main.js`** — loads last. Contains the hero/footer particle canvases, magnetic button interactions, menu spotlight effects, smooth anchor navigation, and the boot sequence that calls `runPreloader()` → `runIntro()` on page load.
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
 
----
+<br/>
 
-## Features
+## ✦ &nbsp;Tech Stack
 
-- **Two-stage cinematic intro** — a 2-second architectural preloader (animated progress line, no spinners or generic loading bars) followed by a ~4-second particle-driven sequence where the wordmark is revealed letter-by-letter by a sweeping beam of light, complete with particle sparks and a film-rip transition into the homepage.
-- **GSAP ScrollTrigger** animations on every section — staggered entrances, clip-path text reveals, parallax image scrubbing, and animated count-up statistics.
-- **Custom cursor** — a dot + trailing ring combination with magnetic attraction on all primary buttons.
-- **Two ambient particle canvases** — one behind the hero section, one in the footer — both fully hand-coded with Canvas 2D (no external particle library).
-- **Skip Intro / Replay Intro** controls, so the experience respects first-time visitors while remaining demo-able on request.
-- Fully responsive layout with a dedicated breakpoint stylesheet.
-- **Opt-in real photography layer** — see below.
+<div align="center">
 
----
+| Layer | Technology |
+|:---|:---|
+| Markup | Semantic HTML5 |
+| Styling | Plain CSS3 — no preprocessor, no build step |
+| Animation | [GSAP 3](https://gsap.com/) + ScrollTrigger via CDN |
+| Particles | Hand-written Canvas 2D — no library |
+| Typography | Cormorant Garamond + Montserrat via Google Fonts |
+| Build | **None** — open `index.html`, it works |
 
-## Enabling Real Photography
+</div>
 
-By default, the **About** section image and all four **Gallery** cards use the original CSS gradient placeholders — this guarantees the site looks and behaves exactly as designed out of the box, with no risk of broken image icons if photos haven't been added yet.
+<br/>
 
-To switch on real photography:
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
 
-1. Add your photo files into `assets/images/` using these exact filenames (see `assets/images/README.txt` for full specs):
+<br/>
+
+## ✦ &nbsp;Live Demo
+
+<div align="center">
+
+### 👉 &nbsp;[professyzenith.github.io/Lumiere](https://professyzenith.github.io/Lumiere/)
+
+</div>
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
+
+<br/>
+
+## ✦ &nbsp;Run Locally
+
+No installation needed — just open the file or serve it:
+
+```bash
+# Option A — Python
+python3 -m http.server 8000
+
+# Option B — Node
+npx serve .
+```
+
+Then visit → `http://localhost:8000`
+
+Or simply double-click `index.html` — this project uses no `fetch`, no ES modules, so `file://` works fine.
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
+
+<br/>
+
+## ✦ &nbsp;Deploy
+
+### GitHub Pages
+1. Push this folder's contents to a repo
+2. **Settings → Pages → Source:** `main` branch, `/ (root)` → **Save**
+3. Live in ~60 seconds at `https://username.github.io/repo-name/`
+
+### Vercel
+1. Import the GitHub repo at [vercel.com/new](https://vercel.com/new)
+2. Leave build command + output directory blank (auto-detected as static)
+3. Click **Deploy** — done
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
+
+<br/>
+
+## ✦ &nbsp;Enabling Real Photography
+
+The site ships with CSS gradient placeholders so it looks great immediately with zero setup. To add real photos:
+
+1. Drop these files into `assets/images/`:
    - `about-interior.jpg`
    - `gallery-grand-hall.jpg`
    - `gallery-garden-terrace.jpg`
    - `gallery-private-dining.jpg`
    - `gallery-wine-cellar.jpg`
 
-2. Open `index.html` and add the `photo-mode` class to the `<body>` tag:
-
-   ```html
-   <body class="locked photo-mode">
-   ```
-
-That's it — the corresponding `<img>` tags (already wired into the markup, currently hidden) will display automatically, layered correctly behind the existing labels and hover effects, with zero other changes to the page.
-
-> **Tip:** [unsplash.com](https://unsplash.com) and [pexels.com](https://pexels.com) both offer high-quality, commercially-free restaurant interior and fine dining photography if you don't yet have a real photo shoot for the client.
-
----
-
-## Technology Stack
-
-| Layer | Choice |
-|---|---|
-| Markup | Semantic HTML5 |
-| Styling | Plain CSS3 (no preprocessor, no build step) |
-| Animation orchestration | [GSAP 3](https://gsap.com/) + ScrollTrigger (via CDN) |
-| Particle effects | Hand-written Canvas 2D (no external library) |
-| Typography | Cormorant Garamond + Montserrat (Google Fonts, via CDN) |
-| Build tooling | **None required** — open `index.html` directly, or serve as static files |
-
-No npm install, no bundler, no framework. This is intentional: the project is designed to be inspected, edited, and deployed by anyone, instantly.
-
----
-
-## Running Locally
-
-No installation needed. Either:
-
-**Option A — open directly**
-Double-click `index.html`. (Note: some browsers restrict `fetch`/module behaviour on `file://` URLs — this project doesn't use either, so direct opening works fine.)
-
-**Option B — serve locally** (recommended for the most accurate preview)
-
-```bash
-# Python 3
-python3 -m http.server 8000
-
-# Node.js
-npx serve .
+2. Add `photo-mode` to `<body>` in `index.html`:
+```html
+<body class="locked photo-mode">
 ```
 
-Then visit `http://localhost:8000`.
+That's it — images appear automatically. No other changes needed.
 
----
+> Free high-quality restaurant photography: [unsplash.com](https://unsplash.com) · [pexels.com](https://pexels.com)
 
-## Deployment
+<br/>
 
-### GitHub Pages
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
 
-1. Push the contents of this folder to a GitHub repository.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment → Source**, select **Deploy from a branch**.
-4. Choose your branch (e.g. `main`) and folder `/ (root)`, then **Save**.
-5. Your site will be live within a minute at `https://your-username.github.io/your-repo-name/`.
+<br/>
 
-### Vercel
+## ✦ &nbsp;Browser Support
 
-1. Push this folder to a GitHub repository (or import it directly).
-2. Go to [vercel.com/new](https://vercel.com/new) and import the repository.
-3. Vercel will auto-detect this as a static site — no build command or output directory configuration is needed (leave both blank, or set Output Directory to `.`).
-4. Click **Deploy**.
+Tested on current Chrome, Edge, Firefox, and Safari.
+Uses: `Canvas 2D` · `CSS custom properties` · `clip-path` · `backdrop-filter` · `GSAP 3`
 
-Both platforms serve static files directly, so no server-side configuration is required.
+No polyfills required.
 
----
+<br/>
 
-## Browser Support
+<div align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%"/>
+</div>
 
-Built and tested against current versions of Chrome, Edge, Firefox, and Safari. Uses standard Canvas 2D, CSS custom properties, `clip-path`, and `backdrop-filter` — all well-supported in modern evergreen browsers. No polyfills are included.
+<br/>
 
----
+<div align="center">
 
-## Credits
+**Built with intent. Animated with craft. Deployed with pride.**
 
-- **Animation engine:** [GSAP](https://gsap.com/) by GreenSock
-- **Typography:** [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond) & [Montserrat](https://fonts.google.com/specimen/Montserrat), via Google Fonts
+<br/>
 
----
+<img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&size=28&duration=4000&pause=2000&color=C9A96E&center=true&vCenter=true&width=500&height=60&lines=Lumi%C3%A8re+%E2%80%94+Fine+Dining;Where+Cuisine+Becomes+Art" alt="footer" />
 
-## License
+<br/><br/>
 
-This is a portfolio demonstration project. Feel free to fork, adapt, and use as a starting point for client work.
+![GitHub last commit](https://img.shields.io/github/last-commit/professyzenith/Lumiere?style=flat-square&color=C9A96E&labelColor=08070A)
+![GitHub repo size](https://img.shields.io/github/repo-size/professyzenith/Lumiere?style=flat-square&color=C9A96E&labelColor=08070A)
+![GitHub stars](https://img.shields.io/github/stars/professyzenith/Lumiere?style=flat-square&color=C9A96E&labelColor=08070A)
+
+</div>
